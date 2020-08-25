@@ -1,0 +1,260 @@
+body {
+    background: #1e1e1e;
+    font-family: 'Gupter', serif;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.contenido .btn-ver-otro, .btn-volver-inicio{
+    position: absolute;
+    top: 90%;
+}
+
+.contenido-texto{
+    margin: 200px 0;
+}
+/* Botones */
+
+.btn-sobre-mi{
+    border: none;
+    background: purple;
+    color: white;
+    width: 30%;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.btn-sobre-mi:hover{
+    background: white;
+    color: black;
+}
+
+
+.btn-mi-historia{
+    border: none;
+    background: purple;
+    color: white;
+    width: 30%;
+    height: 30px;
+    font-weight: bolder;
+}
+
+.btn-mi-historia:hover{
+    background: #1e1e1e;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+/* Sobre mi */
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    animation-name: mover;
+    animation-duration: 3s;
+    margin: 10px 0;
+}
+
+.sobre-mi h3{
+    font-size: 30px;
+    animation-name: titilar;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.sobre-mi h4{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.sobre-mi hr{
+    border-top: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.sobre-mi p {
+    font-size: 20px;
+}
+
+.sobre-mi-herramientas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-inicio{
+    border: none;
+    background: purple;
+    color: white;
+    width: 110%;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.btn-inicio:hover{
+    background: white;
+    color: black;
+}
+
+/* Trabajos */ 
+.contenido-trabajos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.trabajo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    color: black;
+    padding: 15px;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.imagen-trabajo{
+    width: 310px;
+    height: 200px;
+}
+
+.imagen-trabajo img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.titulo-trabajo{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.contenido-trabajo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fffdf9;
+    padding: 15px;
+    color: black;
+    width: 280px;
+    height: 280px;
+}
+
+.trabajo .descripcion{
+    margin-top: -10px;
+}
+.trabajo .estado{
+    width: 100%;
+    background: #ffa36c;
+    text-align: center;
+    color: white;
+}
+
+.trabajo .modalidad{
+    width: 100%;
+    margin-top: 2px;
+    background: #9399ff;
+    text-align: center;
+    color: white;
+}
+
+.btn-ver-otro{
+    border: none;
+    background: purple;
+    color: white;
+    width: 200px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 12px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.btn-ver-otro:hover{
+    background: white;
+    color: black;
+}
+
+.btn-volver-inicio{
+    border: none;
+    background: purple;
+    color: white;
+    width: 200px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.btn-volver-inicio:hover{
+    background: #1e1e1e;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.iconos{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.iconito{
+    color:white;
+    font-size: 40px;
+}
+
+.iconito:hover{
+    color: purple;
+}
+
+.linea-iconos{
+    border-left:none;
+    border-bottom: none;
+    border-right: none;
+    width: 200px;
+    margin-left: -0px;
+}
+
+@keyframes mover{
+    from {filter: opacity(0);}
+    to {transform: opacity(1)}
+}
+
+@keyframes titilar{
+    0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+
+
+@media (max-width: 1040px){
+    .btn-volver-inicio{
+        top: 164%;
+        }
+    }
+
+
+@media (max-width: 699px){
+    .btn-volver-inicio{
+        top: 245%;
+        }
+    }    
